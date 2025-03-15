@@ -24,6 +24,15 @@ export const NoteContent = styled.textarea`
   &:focus {
     outline: 3px solid ${props => props.theme["green-500"]};
   }
+
+  &:not(:focus) {
+    background: ${props => props.theme["gray-300"]};
+    cursor: pointer;
+
+    &:hover {
+      outline: 3px solid ${props => props.theme["green-500"]};
+    }
+  }
 `
 
 export const AddNote = styled.button`
